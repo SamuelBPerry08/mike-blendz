@@ -3,67 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mike Blendz: Precision Cuts</title>
+    <title>Mike Blendz | Precision Cuts Wilmington</title>
     <style>
-        body { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; margin: 0; background-color: #0a0a0a; color: #ffffff; text-align: center; }
-        .container { padding: 60px 20px; max-width: 600px; margin: auto; }
+        /* Base Styles */
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; background-color: #ffffff; color: #333; line-height: 1.6; }
         
-        h1 { font-size: 3rem; letter-spacing: 5px; color: #d4af37; margin-bottom: 5px; text-transform: uppercase; font-weight: 900; }
-        .sub-brand { font-size: 1.2rem; letter-spacing: 3px; color: #fff; text-transform: uppercase; margin-bottom: 40px; border-top: 1px solid #333; display: inline-block; padding-top: 10px; }
-        
-        .booking-card { background: #141414; padding: 45px 30px; border-radius: 4px; border: 1px solid #222; box-shadow: 0 20px 40px rgba(0,0,0,0.6); }
-        .service-title { font-size: 1.4rem; color: #fff; margin-bottom: 5px; }
-        .price-tag { font-size: 2.5rem; color: #d4af37; font-weight: bold; margin-bottom: 20px; }
-        
-        .btn { background: #d4af37; color: #000; padding: 20px 40px; text-decoration: none; border-radius: 0px; font-weight: 800; display: inline-block; letter-spacing: 1px; transition: all 0.3s ease; border: 2px solid #d4af37; cursor: pointer; }
-        .btn:hover { background: transparent; color: #d4af37; }
-        
-        .info-section { margin-top: 40px; color: #bbb; line-height: 1.8; }
-        .info-section a { color: #d4af37; text-decoration: none; font-weight: bold; }
-        
-        .payments { font-size: 0.75rem; color: #555; margin-top: 25px; text-transform: uppercase; letter-spacing: 2px; }
-        .instagram-link { display: block; margin-top: 40px; color: #d4af37; text-decoration: none; font-size: 1.1rem; }
+        /* Navigation */
+        nav { display: flex; justify-content: center; align-items: center; padding: 20px; border-bottom: 1px solid #eee; background: white; sticky; top: 0; z-index: 1000; }
+        nav a { margin: 0 15px; text-decoration: none; color: #1a1a1a; font-weight: 600; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; }
+        .nav-book { background: #1a1a1a; color: white !important; padding: 10px 20px; border-radius: 2px; }
 
-        footer { margin-top: 60px; color: #333; font-size: 0.7rem; letter-spacing: 1px; padding-bottom: 40px; }
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=2070'); 
+            background-size: cover; background-position: center; height: 70vh; display: flex; flex-direction: column; 
+            justify-content: center; align-items: center; color: white; text-align: center; padding: 0 20px;
+        }
+        .hero h1 { font-size: 3.5rem; letter-spacing: 8px; margin-bottom: 10px; font-weight: 300; }
+        .hero p { font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 30px; }
+        
+        /* Buttons */
+        .btn-large { background: white; color: black; padding: 18px 40px; text-decoration: none; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; transition: 0.3s; border: 1px solid white; }
+        .btn-large:hover { background: transparent; color: white; }
+
+        /* Content Sections */
+        .section { padding: 80px 20px; max-width: 1100px; margin: auto; display: flex; flex-wrap: wrap; gap: 40px; }
+        .column { flex: 1; min-width: 300px; }
+        
+        h2 { font-size: 1.5rem; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 20px; border-bottom: 2px solid #d4af37; display: inline-block; padding-bottom: 5px; }
+        
+        /* Footer / Visit Section */
+        .visit-us { background: #f9f9f9; padding: 80px 20px; text-align: center; }
+        .visit-us p { margin: 5px 0; font-size: 1.1rem; }
+        
+        .social-link { display: block; margin-top: 20px; color: #d4af37; text-decoration: none; font-weight: bold; letter-spacing: 1px; }
+
+        footer { padding: 40px; text-align: center; font-size: 12px; color: #999; letter-spacing: 1px; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            nav { flex-direction: column; gap: 10px; }
+        }
     </style>
 </head>
 <body>
 
-<div class="container">
+<nav>
+    <a href="#about">About</a>
+    <a href="https://instagram.com/mke_blendzz" target="_blank">Instagram</a>
+    <a href="#contact">Contact</a>
+    <a href="http://mike-blendz-precision-cuts.square.site/" class="nav-book">Book Now</a>
+</nav>
+
+<section class="hero">
     <h1>MIKE BLENDZ</h1>
-    <div class="sub-brand">Precision Cuts</div>
+    <p>PRECISION CUTS | WILMINGTON, DE</p>
+    <a href="http://mike-blendz-precision-cuts.square.site/" class="btn-large">Book An Appointment</a>
+</section>
 
-    <div class="booking-card">
-        <div class="service-title">The Signature Haircut</div>
-        <div class="price-tag">$20</div>
-        <p style="color: #777; margin-bottom: 30px;">Fades, tapers, and precision styling.<br>Automated SMS reminders sent upon booking.</p>
-        
-        <a href="http://mike-blendz-precision-cuts.square.site/" class="btn">BOOK APPOINTMENT</a>
-
-        <div class="payments">
-            Accepting: Card • Apple Pay • Venmo • Cash
-        </div>
+<div class="section" id="about">
+    <div class="column">
+        <h2>The Brand</h2>
+        <p>Located in Wilmington, Mike Blendz: Precision Cuts is dedicated to delivering exceptional quality and sharp fades. We believe a haircut is more than just a service—it's about the confidence you feel when you leave the chair.</p>
+        <p>Specializing in modern tapers, classic scissor work, and precision blends for only <strong>$20</strong>. Select "Pay in Person" to use cash or card at the shop.</p>
     </div>
-
-    <div class="info-section">
-        <p>
-            <strong>Location:</strong><br>
-            616 Berwick Rd. Wilmington, DE 19803
-        </p>
-        <p>
-            <strong>Contact:</strong><br>
-            <a href="tel:302-476-0229">302-476-0229</a>
-        </p>
+    <div class="column">
+        <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&q=80&w=1000" alt="Barber Tools" style="width: 100%; border-radius: 2px;">
     </div>
-
-    <a href="https://instagram.com/mke_blendzz" class="instagram-link" target="_blank">
-        Follow the work: @mke_blendzz
-    </a>
-
-    <footer>
-        &copy; 2026 MIKE BLENDZ: PRECISION CUTS
-    </footer>
 </div>
+
+<div class="visit-us" id="contact">
+    <h2>Visit Us</h2>
+    <p>616 Berwick Rd.</p>
+    <p>Wilmington, DE 19803</p>
+    <p>United States</p>
+    <p style="margin-top: 20px;"><strong>Phone:</strong> <a href="tel:302-476-0229" style="color: inherit; text-decoration: none;">302-476-0229</a></p>
+    
+    <a href="https://instagram.com/mke_blendzz" class="social-link" target="_blank">FOLLOW @MKE_BLENDZZ</a>
+</div>
+
+<footer>
+    &copy; 2026 MIKE BLENDZ: PRECISION CUTS. ALL RIGHTS RESERVED.
+</footer>
 
 </body>
 </html>
